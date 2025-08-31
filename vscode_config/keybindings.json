@@ -1,0 +1,154 @@
+// Place your key bindings in this file to override the defaults
+[
+    // mac specific mappings
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.showCommands",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+        "when": "isMac"
+    },
+    // basic
+    {
+        "key": "ctrl+e",
+        "command": "cursorLineEnd",
+        "when": "textInputFocus && vim.mode == 'Insert'"
+    },
+    {
+        "key": "q w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && vim.mode != 'Insert'"
+    },
+    // window navigation 
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "editorFocus"
+    },
+    // use ctrl j k to navigate
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    // hover window navigation
+    {
+        "key": "h",
+        "command": "editor.action.scrollLeftHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "j",
+        "command": "editor.action.scrollDownHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "k",
+        "command": "editor.action.scrollUpHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "l",
+        "command": "editor.action.scrollRightHover",
+        "when": "editorHoverFocused"
+    },
+    // file explorer operation
+    {
+        "key": "escape",
+        "command": "workbench.action.closeSidebar",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "f",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "y",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    // terminal operation
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+]

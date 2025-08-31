@@ -1,0 +1,165 @@
+{
+    // vim configuration
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.smartRelativeLine": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                ":"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "p",
+                "d"
+            ],
+            "commands": [
+                "editor.action.peekDefinition"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "p",
+                "i"
+            ],
+            "commands": [
+                "editor.action.peekImplementation"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "q"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "t"
+            ],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "p",
+                "t"
+            ],
+            "commands": [
+                "editor.action.peekTypeDefinition"
+            ]
+        }
+    ],
+    // editor settings
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "on",
+    "editor.formatOnSave": true,
+    "editor.cursorSurroundingLines": 8,
+    "remote.SSH.remotePlatform": {
+        "astros@10.34.2.80": "linux"
+    },
+    "window.commandCenter": true
+}

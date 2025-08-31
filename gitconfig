@@ -1,0 +1,55 @@
+[user]
+  name = Your Name                ; Set your name (for commit authorship)[2][3]
+  email = you@example.com         ; Set your email
+
+[core]
+  editor = vim                    ; Preferred text editor for Git commands[3]
+  excludesfile = ~/.gitignore     ; Global ignore file for all your repos[4]
+  compression = 9                 ; High compression for efficient storage[2]
+  whitespace = trailing-space     ; Prevent whitespace-related issues[2]
+  pager = delta                   ; Improved paging of command output[4]
+
+[color]
+  ui = true                       ; Enable colored output in the terminal[18]
+
+[alias]
+  st = status                     ; Shortcut for git status[16]
+  co = checkout                   ; Shortcut for git checkout[16]
+  br = branch                     ; Shortcut for git branch[16]
+  cm = commit                     ; Shortcut for git commit[16]
+  lg = log --oneline --graph --decorate ; Easy log viewing[17]
+
+[merge]
+  conflictstyle = zdiff3          ; Better merge conflict display[4]
+
+[diff]
+  algorithm = histogram           ; Improved diff algorithm[4]
+
+[pull]
+  ff = only                       ; Use fast-forward on pulls unless explicitly specified[4]
+  rebase = true                   ; Favor rebase over merge on pull[4]
+
+[init]
+  defaultBranch = main            ; Use main as the default branch in new repos[4][10]
+
+[push]
+  autosetupremote = true          ; Automatically track remotes[4]
+  default = simple                ; Safer push defaults
+
+[commit]
+  verbose = true                  ; Show diffs on commit[4]
+  gpgsign = true                  ; Sign commits if you use GPG[2]
+
+[help]
+  autocorrect = 10                ; Quickly autocorrect git command typos[4]
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/ ; Always use SSH for GitHub remotes[4]
+
+[rebase]
+  autosquash = true               ; Autosquash fixup and squash commits[4]
+  autostash = true                ; Automatically stash changes before rebase[4]
+
+[rerere]
+  enabled = true                  ; Remember resolved merge conflicts[4]
+
